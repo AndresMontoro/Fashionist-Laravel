@@ -1,6 +1,96 @@
 @extends('layouts.Principal')
 @section('contenido')
 <x-guest-layout>
+
+    <style>
+        body{
+            background-color: rgb(219,213,185);
+          }
+       .boton{
+        display: inline-block ;
+        border-radius: 4px;
+        background-color: #000000;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-right: 40rem;
+        margin-left: 40rem
+      }
+    
+      button{
+    
+      cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      color: #FFFFFF;
+      background-color: #000000;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100px;
+    
+      }
+    
+    
+    
+    
+      .t-center{
+            text-align:center;
+        }
+    
+    
+        /* Estilos para el formulario */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #ae9c8f;
+      padding: 20px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilos para los encabezados de fila */
+    td[style="text-align:right;"] {
+      font-weight: bold;
+    }
+    
+    /* Estilos para las entradas de texto */
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 2px solid #000000;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    
+     /*Estilos para el botón de envío*/ 
+    input[type="submit"] {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: center;
+    }
+    
+    
+    /* Estilos para el mensaje de error */
+    p {
+      color: red;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    </style>
     <x-authentication-card>
         <x-slot name="logo">
             <!-- <x-authentication-card-logo /> -->

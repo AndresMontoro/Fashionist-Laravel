@@ -1,5 +1,49 @@
 @extends('layouts.Principal')
 @section('contenido')
+
+
+<style>
+    body{
+        background-color: rgb(219,213,185);
+      }
+      button{
+	display: inline-block ;
+	border-radius: 4px;
+	background-color: #000000;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+    margin-right: 40rem;
+    margin-left: 40rem
+  }
+
+  .t-center{
+         text-align:center;
+        }
+
+
+
+        table {
+			border-collapse: collapse;
+			width: 50%;
+			margin: auto;
+		}
+		td, th {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: center;
+		}
+		th {
+			background-color: lightgray;
+		}
+
+</style>
 <article class="t-center">
             <h2 id="localizacion" class="titulo" style="background-color: #735945; text-align: center;" >¿DÓNDE NOS ENCONTRAMOS?</h2>
 
