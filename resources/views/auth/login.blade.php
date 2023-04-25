@@ -17,7 +17,6 @@
     
     
     
-    
     .t-center{
         text-align:center;
     }
@@ -70,8 +69,8 @@
     </style>
 
     <x-authentication-card>
-        <!--<x-slot name="logo"> -->
-            <!-- <x-authentication-card-logo /> -->
+        <!-- <x-slot name="logo"> -->
+        <!--    <x-authentication-card-logo /> -->
         <!-- </x-slot> -->
 
         <x-validation-errors class="mb-4" />
