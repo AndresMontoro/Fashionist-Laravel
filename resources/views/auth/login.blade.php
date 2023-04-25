@@ -3,47 +3,24 @@
 <x-guest-layout>
 
     <style>
-        body{
-            background-color: rgb(219,213,185);
-          }
-       .boton{
-        display: inline-block ;
-        border-radius: 4px;
-        background-color: #000000;
-        border: none;
-        color: #000000;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-        width: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        margin-right: 40rem;
-        margin-left: 40rem
-      }
-    
       button{
-    
-      cursor: pointer;
+        cursor: pointer;
         display: inline-block;
         position: relative;
         transition: 0.5s;
-      color: #FFFFFF;
-      background-color: #000000;
-      border-radius: 4px;
-      padding: 10px;
-      width: 100px;
-    
+        color: #FFFFFF;
+        background-color: #000000;
+        border-radius: 4px;
+        padding: 10px;
+        width: 100px;
       }
     
     
     
     
-      .t-center{
-            text-align:center;
-        }
-    
+    .t-center{
+        text-align:center;
+    }
     
         /* Estilos para el formulario */
     form {
