@@ -1,7 +1,15 @@
 @extends('layouts.Principal')
 @section('contenido')
+
+<style>
+    .t-center{
+               text-align:center;
+     }
+   </style>
+           
+           
 <article>
-    <h2 id="reserva" class="titulo" style="background-color: #735945;" style="text-align: center;">RESERVA DE CITAS</h2>
+    <h2 class="t-center" id="reserva" class="titulo" style="background-color: #735945;" style="text-align: center;">RESERVA DE CITAS</h2>
     <a>
         <h5 class="t-center">Si usted aún no esta "Registrado" no podras realizar la reserva.</h5>
     </a>

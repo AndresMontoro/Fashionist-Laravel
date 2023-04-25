@@ -57,7 +57,7 @@
         
         
     </style>
-            <h2 id="informacion" class="titulo"  style="background-color: #735945;">INFORMACIÓN DE PRECIOS </h2>
+            <h2 class="t-center" id="informacion" class="titulo"  style="background-color: #735945;">INFORMACIÓN DE PRECIOS </h2>
 
             <a>
                 <h5 class="t-center">Esta peluquería de barrio ofrece una amplia gama de servicios a precios asequibles. 
