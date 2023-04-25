@@ -1,7 +1,6 @@
 @extends('layouts.Principal')
 @section('contenido')
 <x-guest-layout>
-    <x-authentication-card>
 
     <style>
       button{
@@ -68,6 +67,9 @@
       margin-top: 10px;
     }
     </style>
+    <x-authentication-card>
+
+    
     
         <!-- <x-slot name="logo"> -->
         <!--    <x-authentication-card-logo /> -->
