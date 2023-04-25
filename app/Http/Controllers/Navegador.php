@@ -7,22 +7,22 @@ use Illuminate\Http\Request;
 class Navegador extends Controller
 {
     public function index(){
-        return view ('Pelu.Clientes');
+        return view ('Pelu.clientes');
     }
 
     public function peinados(){
-        return view ('Pelu.Peinados');
+        return view ('Pelu.peinados');
     }
 
     public function informacion(){
-        return view ('Pelu.Informacion');
+        return view ('Pelu.informacion');
     }
 
     public function citas(){
-        return view ('Pelu.Citas');
+        return view ('Pelu.citas');
     }
 
     public function faqs(){
-        return view ('Pelu.Faqs');
+        return view ('Pelu.FAQs');
     }
 }
