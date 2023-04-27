@@ -15,7 +15,8 @@
     </a>
     <hr class="featurette-divider">
 
-    <form method="post" action="citas.php" style="text-align: center;">
+    <form method="post" action="/guardar-cita" style="text-align: center;">
+        @csrf
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br><br>
@@ -49,7 +50,9 @@
             <option value="07:00 PM">19:00</option>
         </select>
         <br><br>
-        <!--Ahora mostramos el formulario si el usuario esta registrado-->
+        <!--Mostramos el submit, el request NuevaCita se encarga de autorizar o no el request-->
+        <input type="submit" value="Enviar">
+    
         <?php 
 
         $mensaje = [0, "aviso"];

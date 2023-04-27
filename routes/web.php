@@ -19,6 +19,8 @@ Route::get('/informacion', 'Navegador@informacion')->name('informacion');
 Route::get('/citas', 'Navegador@citas')->name('citas');
 Route::get('/faqs', 'Navegador@faqs')->name('faqs');
 
+Route::post('/guardar-cita', 'CitaController@guardar');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
