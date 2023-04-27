@@ -116,6 +116,8 @@
 
    <br>
 
+   <hr class="featurette-divider">
+
    <h4 class="t-center">INFORMACIÓN DE CONTACTO</h4>
    <ul>
 		<li><a href="mailto:peluqueriafashionist@hotmail.com">Mándanos un correo: peluqueriafashionist@hotmail.com</a></li>

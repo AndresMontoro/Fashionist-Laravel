@@ -17,6 +17,7 @@
 
     <form method="post" action="/guardar-cita" style="text-align: center;">
         @csrf
+        
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br><br>

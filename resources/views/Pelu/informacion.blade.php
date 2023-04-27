@@ -130,7 +130,9 @@
                     </tbody>
                 </table>
             </div>
-            <div>
+
+            <br>
+            <div style="text-align: center;">
                 <button >
                     <a class="button" style="vertical-align:middle"  href="{{route('login')}}"><span>Reserva</span></a>
                 </button>
