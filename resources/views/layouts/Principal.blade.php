@@ -57,7 +57,7 @@
         <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('citas')}}">Citas</a>
         <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('faqs')}}">FAQs</a>
         @if (Auth::check())
-            <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">Bienvenido, {{auth()->user()->name}}</a>
+            <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">{{auth()->user()->name}}</a>
         @else
             <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">Login</a>
         @endif
