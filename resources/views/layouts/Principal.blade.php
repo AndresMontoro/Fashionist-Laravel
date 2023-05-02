@@ -56,7 +56,11 @@
         <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('peinados')}}">Peinados</a>
         <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('citas')}}">Citas</a>
         <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('faqs')}}">FAQs</a>
-        <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">Login</a>
+        @if (Auth::check())
+            <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">Bienvenido, {{auth()->user()->name}}</a>
+        @else
+            <a class="nav-link" style="color: rgba(0, 0, 0);" href="{{route('login')}}">Login</a>
+        @endif
     </nav>
 
             @yield('contenido')
