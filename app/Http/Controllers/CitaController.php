@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use App\Cita;
+use App\Models\Cita;
 use App\Http\Requests\NuevaCitaRequest;
 
 class CitaController extends Controller
