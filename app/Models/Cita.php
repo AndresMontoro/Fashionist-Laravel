@@ -9,7 +9,7 @@ class Cita extends Model
 {
     use HasFactory;
     
-    //protected $table = 'cita';
+    protected $table = 'citas';
 
     // Agregar datos
     protected $fillable =['id_us', 'nomb', 'telefono', 'id_pelu', 'fecha', 'hora'];

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('id_pelu');
             $table->date('fecha');
             $table->time('hora');
+            $table->timestamps();
         });
     }
 

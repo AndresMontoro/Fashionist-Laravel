@@ -28,9 +28,9 @@
         <select id="peluquero" name="peluquero" required>
             <option selected="true" disabled="disabled" >Seleccione un Peluquero</option>
 
-            <option value="Jorge">Jorge Fernández</option>
-            <option value="Alvaro">Álvaro Cárdenas</option>
-            <option value="Sergio">Sergio Contreras </option>
+            <option value="1">Jorge Fernández</option>
+            <option value="2">Álvaro Cárdenas</option>
+            <option value="3">Sergio Contreras </option>
 
         </select>
         <br><br>
@@ -40,15 +40,15 @@
         <label for="hora">Hora:</label>
         <select id="hora" name="hora" required>
             <option selected="true" disabled="disabled">Seleccione una hora</option>
-            <option value="09:00 AM">09:00</option>
-            <option value="10:00 AM">10:00</option>
-            <option value="11:00 AM">11:00</option>
-            <option value="12:00 AM">12:00</option>
-            <option value="01:00 PM">13:00</option>
-            <option value="04:00 PM">16:00</option>
-            <option value="05:00 PM">17:00</option>
-            <option value="06:00 PM">18:00</option>
-            <option value="07:00 PM">19:00</option>
+            <option value="09:00:00">09:00</option>
+            <option value="10:00:00">10:00</option>
+            <option value="11:00:00">11:00</option>
+            <option value="12:00:00">12:00</option>
+            <option value="13:00:00">13:00</option>
+            <option value="16:00:00">16:00</option>
+            <option value="17:00:00">17:00</option>
+            <option value="18:00:00">18:00</option>
+            <option value="19:00:00">19:00</option>
         </select>
         <br><br>
         <!--Mostramos el submit, el request NuevaCita se encarga de autorizar o no el request-->

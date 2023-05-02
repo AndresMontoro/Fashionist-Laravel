@@ -17,13 +17,13 @@ class CitaController extends Controller
             // Creamos una cita
             $cita = new Cita;
             $cita->id_us = Auth::id();
-            $cita->nomb = $request->nomb;
+            $cita->nomb = $request->nombre;
             $cita->telefono = $request->telefono;
-            $cita->id_pelu = $request->id_pelu;
+            $cita->id_pelu = $request->peluquero;
             $cita->fecha = $request->fecha;
             $cita->hora = $request->hora;
 
-            $cita->save;
+            $cita->save();
 
             $mensaje = "Cita registrada";
 
