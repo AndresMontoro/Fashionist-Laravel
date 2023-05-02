@@ -87,6 +87,11 @@
             </div>
 
             <div class="mt-4">
+                <x-label for="telefono" value="Teléfono:" />
+                <x-input id="telefono" class="block mt-1 w-full" type="text" name="telefono" :value="old('telefono')" required autofocus autocomplete="telefono" />
+            </div>
+
+            <div class="mt-4">
                 <x-label for="email" value="Correo:" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             </div>
