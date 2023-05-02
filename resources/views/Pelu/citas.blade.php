@@ -18,12 +18,24 @@
     <form method="post" action="/guardar-cita" style="text-align: center;">
         @csrf
         
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br><br>
+        @if(Auth::check())
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value ="{{ auth()->user()->name }}" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" value ="{{ auth()->user()->telefono }}" required>
+            <br><br>
+        @else
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+        @endif
+
         <label for="peluquero">Peluquero:</label>
         <select id="peluquero" name="peluquero" required>
             <option selected="true" disabled="disabled" >Seleccione un Peluquero</option>

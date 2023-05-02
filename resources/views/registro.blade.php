@@ -1,4 +1,7 @@
+@extends('layouts.Principal')
+@section('contenido')
 <?php
+
     error_reporting(E_ERROR | E_PARSE);
     function comprobar_usuario($usuario)
     {
@@ -102,7 +105,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,7 +113,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Peluqueria</title>
+    <title>Peluqueria</title> -->
+
     <style>
         body{
             background-color: rgb(219,213,185);
@@ -262,3 +266,5 @@
     </article>
 </body>
 </html>
+
+@endsection
