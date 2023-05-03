@@ -18,9 +18,15 @@ Route::get('/peinados', 'Navegador@peinados')->name('peinados');
 Route::get('/informacion', 'Navegador@informacion')->name('informacion');
 Route::get('/citas', 'Navegador@citas')->name('citas');
 Route::get('/faqs', 'Navegador@faqs')->name('faqs');
-Route::get('/perfil', 'Navegador@perfil')->name('perfil');
 
 Route::post('/guardar-cita', 'CitaController@guardar');
+
+Route::get('/admin', 'Admin@admin')->name('admin');
+Route::get('/consultar', 'Admin@consultar')->name('consultar');
+Route::get('/anadir', 'Admin@anadir')->name('anadir');
+Route::get('/eliminar', 'Admin@eliminar')->name('eliminar');
+Route::get('/consCitas', 'Admin@consCitas')->name('consCitas');
+
 
 Route::middleware([
     'auth:sanctum',
