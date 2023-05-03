@@ -10,7 +10,7 @@
         
 
 <article>
-            <h2  class="t-center" id="fotos" class="titulo" style="background-color: #735945;">PEINADOS DEL MES</h2>
+            <h2  class="t-center" id="fotos" class="titulo" style="background-color: black; color: white; text-align:center;">PEINADOS DEL MES</h2>
             <a>
                 <h5 class="t-center">Aqui teneis el Top 3 Pelados del mes de Marzo</h5>
             </a>
