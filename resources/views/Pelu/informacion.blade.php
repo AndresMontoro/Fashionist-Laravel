@@ -101,7 +101,7 @@
     <br>
     <div style="text-align: center;">
         <button >
-            <a class="button" style="vertical-align:middle"  href="{{route('login')}}"><span>Reserva</span></a>
+            <a class="button" style="vertical-align:middle"  href="{{route('citas')}}"><span>Reserva</span></a>
         </button>
             
     </div>
