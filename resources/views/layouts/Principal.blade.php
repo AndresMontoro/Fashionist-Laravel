@@ -9,35 +9,68 @@
     <title>Peluqueria</title>
     <style>
     body{
-        background-color: rgb(219,213,185);
-      }
+      background-color: rgb(219,213,185);
+    }
     header 
     {
-	background: url(img/logo.jpg);
-	background-size: cover;
-	color: #fdfaf5;
-	overflow: hidden;
-	padding: 60px;
+      background: url(img/logo.jpg);
+      background-size: cover;
+      color: #fdfaf5;
+      overflow: hidden;
+      padding: 60px;
     }
 
     .boton{
-	display: inline-block ;
-	border-radius: 4px;
-	background-color: #000000;
-	border: none;
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 15px;
-	padding: 10px;
-	width: 100px;
-	transition: all 0.5s;
-	cursor: pointer;
-	margin: 5px;
-    margin-right: 40rem;
-    margin-left: 40rem
-  }
+      display: inline-block ;
+      border-radius: 4px;
+      background-color: #000000;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      margin-right: 40rem;
+      margin-left: 40rem
+    }
 
-    </style>
+    table
+	{
+		background-color: white;
+		text-align: center;
+		border-collapse: collapse;
+		width: 50%;
+		margin:0 auto;		/*Centrado para bloques*/
+	}
+
+	th, td 
+	{
+		border: solid 1px black;
+		padding: 4px;
+	}
+
+	thead 
+	{
+		background-color: black;
+		border-bottom: solid 5px;
+		color: white;
+	}
+
+	tr:nth-child(even) 
+	{
+		background-color: #ddd;
+	}
+
+	tr:hover td
+	{
+		background-color: rgb(219,213,185);	/* AQUI */
+		color: black;
+	}	
+
+</style>
 </head>
 <body> 
 

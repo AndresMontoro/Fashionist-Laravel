@@ -55,41 +55,11 @@
 		text-align:center;
 	}
 
-	table
-	{
-		background-color: white;
-		text-align: center;
-		border-collapse: collapse;
-		width: 50%;
-		margin:0 auto;		/*Centrado para bloques*/
-	}
-
-	th, td 
-	{
-		border: solid 1px black;
-		padding: 4px;
-	}
-
-	thead 
-	{
-		background-color: black;
-		border-bottom: solid 5px;
-		color: white;
-	}
-
-	tr:nth-child(even) 
-	{
-		background-color: #ddd;
-	}
-
-	tr:hover td
-	{
-		background-color: rgb(184, 146, 121);
-		color: white;
-	}	
+	
 </style>
 
 <article class="t-center">
+	<h2  class="t-center" id="fotos" class="titulo" style="background-color: black; color: white; text-align:center;">PERFIL DEL USUARIO {{auth()->user()->name}}</h2>
     <br><br>
     <table>
 		<thead>

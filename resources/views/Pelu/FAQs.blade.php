@@ -31,38 +31,6 @@
 		text-align:center;
 	}
 
-	table
-	{
-		background-color: white;
-		text-align: center;
-		border-collapse: collapse;
-		width: 50%;
-		margin:0 auto;		/*Centrado para bloques*/
-	}
-
-	th, td 
-	{
-		border: solid 1px black;
-		padding: 4px;
-	}
-
-	thead 
-	{
-		background-color: black;
-		border-bottom: solid 5px;
-		color: white;
-	}
-
-	tr:nth-child(even) 
-	{
-		background-color: #ddd;
-	}
-
-	tr:hover td
-	{
-		background-color: rgb(184, 146, 121);
-		color: white;
-	}
 
 	a:link
 	{
@@ -83,7 +51,7 @@
 
 
 <article class="t-center">
-	<h2 id="localizacion" class="titulo" style="background-color: #735945; text-align: center;" >¿DÓNDE NOS ENCONTRAMOS?</h2>
+	<h2 id="localizacion" class="titulo" style="background-color: black; color: white; text-align:center;" >¿DÓNDE NOS ENCONTRAMOS?</h2>
 
 	<h5 class="t-center">Aqui puedes encontrar información básica de la peluqueria como el Horario y Localización.</h5>
 	
