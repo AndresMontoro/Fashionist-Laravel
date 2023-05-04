@@ -58,6 +58,9 @@
 	
 </style>
 
+@auth
+
+
 <article class="t-center">
 	<h2  class="t-center" id="fotos" class="titulo" style="background-color: black; color: white; text-align:center;">PERFIL DEL USUARIO {{auth()->user()->name}}</h2>
     <br><br>
@@ -102,4 +105,12 @@
 
 </article>
 
+@else
+
+<div class="alert alert-danger" style="vertical-align:middle"> 
+        <ul>
+            <li>TIENE QUE ESTAR LOGGEADO CAPO</li>
+        </ul></div>
+
+@endif
 @endsection
