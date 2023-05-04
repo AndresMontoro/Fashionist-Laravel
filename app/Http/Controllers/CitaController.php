@@ -25,20 +25,19 @@ class CitaController extends Controller
 
             $cita->save();
 
-            $mensaje = "Cita registrada";
+            $mensaje=['m'=>'Cita registrada', 'c'=>'color:green'];
 
             // Volvemos a la pagina de clientes
-            return view('Pelu.clientes')->with('mensaje', $mensaje);
+            //return view('Pelu.citas')->with('mensaje', $mensaje);
         }
 
         else
         {
             // Deberiamos de devolver la vista de citas con un mensaje de error
-            $mensaje = "Debe iniciar sesion para poder añadir una cita";
+            $mensaje['m'=>'Debe iniciar sesion para poder añadir una cita', 'c'=>'color:red'];
 
-            return view('Pelu.clientes')->with('mensaje', $mensaje);
         }
-
+        return redirect()->route('citas')->with('mensaje', $mensaje);
         
     }
 }

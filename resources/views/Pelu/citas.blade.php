@@ -66,19 +66,9 @@
         <!--Mostramos el submit, el request NuevaCita se encarga de autorizar o no el request-->
         <input type="submit" value="Enviar">
     
-        <?php 
-
-        $mensaje = [0, "aviso"];
-        if ($mensaje[0]==1)
-            {
-            $aviso = $mensaje[1];
-            echo "<p style=\"color:red\">$aviso</p>";
-            }
-        else
-            {
-                $aviso = $mensaje[1];
-                echo "<p style=\"color:green\">$aviso</p>";}
-        ?>
+        @if(session('mensaje'))
+        <p style="color:green">{{session('mensaje'['m'])}}</p>
+        @endif
     </form>
 </article>
 @endsection
