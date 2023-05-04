@@ -67,7 +67,7 @@
         <input type="submit" value="Enviar">
     
         @if(session('mensaje'))
-        <p style="color:green">{{session('mensaje'['m'])}}</p>
+        <p style="{{session('mensaje')['c']}}">{{session('mensaje')['m']}}</p>
         @endif
     </form>
 </article>

@@ -34,7 +34,7 @@ class CitaController extends Controller
         else
         {
             // Deberiamos de devolver la vista de citas con un mensaje de error
-            $mensaje['m'=>'Debe iniciar sesion para poder añadir una cita', 'c'=>'color:red'];
+            $mensaje=['m'=>'Debe iniciar sesion para poder añadir una cita', 'c'=>'color:red'];
 
         }
         return redirect()->route('citas')->with('mensaje', $mensaje);
