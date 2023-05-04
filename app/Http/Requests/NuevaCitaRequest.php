@@ -24,7 +24,8 @@ class NuevaCitaRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'id_pelu' => 'required',
+            'hora' => 'required',
         ];
     }
 }

@@ -19,7 +19,7 @@ class CitaController extends Controller
             $cita->id_us = Auth::id();
             $cita->nomb = $request->nombre;
             $cita->telefono = $request->telefono;
-            $cita->id_pelu = $request->peluquero;
+            $cita->id_pelu = $request->id_pelu;
             $cita->fecha = $request->fecha;
             $cita->hora = $request->hora;
 

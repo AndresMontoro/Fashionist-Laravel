@@ -15,6 +15,14 @@
     </a>
     <hr class="featurette-divider">
 
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            <li>Le faltan campos por rellenar</li>
+        </ul>
+    </div>
+@endif
+
     <form method="post" action="/guardar-cita" style="text-align: center;">
         @csrf
         
@@ -36,18 +44,17 @@
             <br><br>
         @endif
 
-        <label for="peluquero">Peluquero:</label>
-        <select id="peluquero" name="peluquero" required>
-            <option selected="true" disabled="disabled" >Seleccione un Peluquero</option>
-
-            <option value="1">Jorge Fernández</option>
-            <option value="2">Álvaro Cárdenas</option>
-            <option value="3">Sergio Contreras </option>
-
+        <label for="id_pelu">Peluquero:</label>
+        <select id="id_pelu" name="id_pelu" required>
+             <option value="">Seleccione un Peluquero</option>
+             <option value="1" {{ old('id_pelu') == '1' ? 'selected' : '' }}>Jorge Fernández</option>
+             <option value="2" {{ old('id_pelu') == '2' ? 'selected' : '' }}>Álvaro Cárdenas</option>
+             <option value="3" {{ old('id_pelu') == '3' ? 'selected' : '' }}>Sergio Contreras</option>
         </select>
+
         <br><br>
         <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required>
+        <input type="date" id="fecha" name="fecha"value="{{old('fecha')}}" required>
         <br><br>
         <label for="hora">Hora:</label>
         <select id="hora" name="hora" required>
