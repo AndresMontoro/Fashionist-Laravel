@@ -19,26 +19,25 @@ class CitaController extends Controller
             $cita->id_us = Auth::id();
             $cita->nomb = $request->nombre;
             $cita->telefono = $request->telefono;
-            $cita->id_pelu = $request->peluquero;
+            $cita->id_pelu = $request->id_pelu;
             $cita->fecha = $request->fecha;
             $cita->hora = $request->hora;
 
             $cita->save();
 
-            $mensaje = "Cita registrada";
+            $mensaje=['m'=>'Cita registrada', 'c'=>'color:green'];
 
             // Volvemos a la pagina de clientes
-            return view('Pelu.clientes')->with('mensaje', $mensaje);
+            //return view('Pelu.citas')->with('mensaje', $mensaje);
         }
 
         else
         {
             // Deberiamos de devolver la vista de citas con un mensaje de error
-            $mensaje = "Debe iniciar sesion para poder añadir una cita";
+            $mensaje=['m'=>'Debe iniciar sesion para poder añadir una cita', 'c'=>'color:red'];
 
-            return view('Pelu.clientes')->with('mensaje', $mensaje);
         }
-
+        return redirect()->route('citas')->with('mensaje', $mensaje);
         
     }
 }

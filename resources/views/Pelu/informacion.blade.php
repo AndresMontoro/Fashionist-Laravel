@@ -53,91 +53,58 @@
         
         .t-center{
             text-align:center;
-        }
-
-        table
-        {
-            background-color: white;
-            text-align: center;
-            border-collapse: collapse;
-            width: 50%;
-            margin:0 auto;		/*Centrado para bloques*/
-        }
-
-        th, td 
-        {
-            border: solid 1px black;
-            padding: 4px;
-        }
-
-        thead 
-        {
-            background-color: black;
-            border-bottom: solid 5px;
-            color: white;
-        }
-
-        tr:nth-child(even) 
-        {
-            background-color: #ddd;
-        }
-
-        tr:hover td
-        {
-            background-color: rgb(184, 146, 121);
-            color: white;
-        }
-        
-        
+        }     
     </style>
-            <h2 class="t-center" id="informacion" class="titulo"  style="background-color: #735945;">INFORMACIÓN DE PRECIOS </h2>
 
-            <a>
-                <h5 class="t-center">Esta peluquería de barrio ofrece una amplia gama de servicios a precios asequibles. 
-                Desde cortes de pelo básicos hasta peinados más elaborados.</h5>
-            </a>
 
-            <hr class="featurette-divider">
+    <h2 class="t-center" id="informacion" class="titulo"  style="background-color: black; color: white; text-align:center;">INFORMACIÓN DE PRECIOS </h2>
 
-            <br>
-            <h5 class="t-center">AQUI PUEDES CONSULTAR LOS PRECIOS</h5>
+    <a>
+        <h5 class="t-center">Esta peluquería de barrio ofrece una amplia gama de servicios a precios asequibles. 
+        Desde cortes de pelo básicos hasta peinados más elaborados.</h5>
+    </a>
 
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Trabajo</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Corte</td>
-                            <td>10€</td>
-                        </tr>
-                        <tr>
-                            <td>Corte + barba</td>
-                            <td>15€</td>
-                        </tr>
-                        <tr>
-                            <td>Corte + barba + cejas</td>
-                            <td>17€</td>
-                        </tr>
-                        <tr>
-                            <td>Corte + barba + cejas + dibujo</td>
-                            <td>19€</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <hr class="featurette-divider">
 
-            <br>
-            <div style="text-align: center;">
-                <button >
-                    <a class="button" style="vertical-align:middle"  href="{{route('login')}}"><span>Reserva</span></a>
-                </button>
-                   
-            </div>
+    <br>
+    <h5 class="t-center">AQUI PUEDES CONSULTAR LOS PRECIOS</h5>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trabajo</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corte</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Corte + barba</td>
+                    <td>15€</td>
+                </tr>
+                <tr>
+                    <td>Corte + barba + cejas</td>
+                    <td>17€</td>
+                </tr>
+                <tr>
+                    <td>Corte + barba + cejas + dibujo</td>
+                    <td>19€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+        <button >
+            <a class="button" style="vertical-align:middle"  href="{{route('citas')}}"><span>Reserva</span></a>
+        </button>
             
-        </article>  
+    </div>
+    
+</article>  
 @endsection

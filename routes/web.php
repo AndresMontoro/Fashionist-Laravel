@@ -19,6 +19,7 @@ Route::get('/peinados', 'Navegador@peinados')->name('peinados');
 Route::get('/informacion', 'Navegador@informacion')->name('informacion');
 Route::get('/citas', 'Navegador@citas')->name('citas');
 Route::get('/faqs', 'Navegador@faqs')->name('faqs');
+Route::get('/perfil', 'Navegador@perfil')->name('perfil');
 
 Route::post('/guardar-cita', 'CitaController@guardar');
 

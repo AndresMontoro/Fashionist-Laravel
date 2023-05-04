@@ -25,4 +25,8 @@ class Navegador extends Controller
     public function faqs(){
         return view ('Pelu.FAQs');
     }
+
+    public function perfil(){
+        return view ('Pelu.perfil');
+    }
 }
