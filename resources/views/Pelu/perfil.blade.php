@@ -107,7 +107,7 @@
 
 @else
 <div>
-    <img src="img/sad.png">
+    <img class="center" src="img/sad.png" alt="SAD" width="150" height="150">
 </div>
 <div class="alert alert-danger" style="vertical-align:middle"> 
         <ul>
