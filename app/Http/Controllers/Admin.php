@@ -14,6 +14,7 @@ class Admin extends Controller
     public function consultar(){
         return view('consultar');
     }
+    
     public function consCitas(Request $request){
         $mes = $request->mes;
         $citas = DB::table('citas')->whereMonth('fecha', $mes)->get();

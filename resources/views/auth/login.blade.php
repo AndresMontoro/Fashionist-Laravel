@@ -38,8 +38,7 @@
     }
     
     /* Estilos para las entradas de texto */
-    input[type="text"],
-    input[type="password"] {
+    input[type="password"], input[type="email"] {
       width: 100%;
       padding: 8px;
       margin: 5px 0;
@@ -84,7 +83,7 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
-            <div>
+            <div class="mt-4">
                 <x-label for="email" value="Correo:" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
