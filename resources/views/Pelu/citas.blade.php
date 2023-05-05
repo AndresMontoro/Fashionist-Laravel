@@ -56,7 +56,18 @@
         cursor: pointer;
         float: center;
     }
-   </style>
+
+    select:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+    input[type="text"]:hover, input[type="tel"]:hover, input[type="date"]:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+</style>
            
            
 <article>

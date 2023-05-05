@@ -65,7 +65,18 @@
       font-size: 12px;
       margin-top: 10px;
     }
-    </style>
+
+    select:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+    input[type="text"]:hover, input[type="tel"]:hover, input[type="date"]:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+</style>
 
     <x-authentication-card>
         <!-- <x-slot name="logo"> -->
@@ -106,7 +117,10 @@
                         {{ __('¿Has olvidado tu contraseña?') }}
                     </a>
                 @endif
+                    <br>
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="/register">¿Aún no estás registrado?</a>
 
+                <div>
                 <x-button class="ml-4">
                     {{ __('Entrar') }}
                 </x-button>

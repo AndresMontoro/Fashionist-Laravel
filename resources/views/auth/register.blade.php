@@ -2,18 +2,18 @@
 @section('contenido')
 <x-guest-layout>
 
-    <style>
-      button{
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-        color: #FFFFFF;
-        background-color: #000000;
-        border-radius: 4px;
-        padding: 10px;
-        width: 100px;
-      }
+<style>
+    button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+    }
     
     
     
@@ -38,8 +38,7 @@
     }
     
     /* Estilos para las entradas de texto */
-    input[type="text"],
-    input[type="password"] {
+    input[type="text"], input[type="password"], input[type="tel"], input[type="email"]{
       width: 100%;
       padding: 8px;
       margin: 5px 0;
@@ -66,7 +65,19 @@
       font-size: 12px;
       margin-top: 10px;
     }
-    </style>
+
+    select:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+    input[type="text"]:hover, input[type="tel"]:hover, input[type="date"]:hover, input[type="email"]:hover,
+    input[type="password"]:hover
+    {
+        background-color: rgb(196, 193, 192);
+    }
+
+</style>
     <x-authentication-card>
 
     
