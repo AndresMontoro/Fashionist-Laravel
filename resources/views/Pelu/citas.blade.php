@@ -141,7 +141,10 @@
             </select>
         </div>
         <!--Mostramos el submit, el request NuevaCita se encarga de autorizar o no el request-->
-        <input type="submit" value="Enviar">
+        <br>
+        <div style="text-align:right;">
+            <input type="submit" value="Enviar">
+        </div>
     
         @if(session('mensaje'))
         <p style="{{session('mensaje')['c']}}">{{session('mensaje')['m']}}</p>
