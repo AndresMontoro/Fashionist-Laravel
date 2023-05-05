@@ -66,7 +66,7 @@
 
 	tr:hover td
 	{
-		background-color: rgb(219,213,185);	/* AQUI */
+		background-color: #ae9c8f;	/* AQUI */
 		color: black;
 	}	
 
