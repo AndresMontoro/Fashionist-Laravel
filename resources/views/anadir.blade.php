@@ -28,6 +28,7 @@ label {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="email"],
 input[type="password"],
 input[type="rol"] {
@@ -78,10 +79,10 @@ button {
     <h1>Añadir usuario</h1>
     <form method="POST" action="{{ route('guardar_usuarios') }}">
         @csrf
-        <label for="id">Id</label>
-        <input type="text" name="id" id="id" required><br>
         <label for="name">Nombre</label>
         <input type="text" name="name" id="name" required><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required><br>
         <label for="password">Contraseña</label>

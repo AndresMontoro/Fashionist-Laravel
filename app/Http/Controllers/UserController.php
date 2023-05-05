@@ -10,9 +10,9 @@ class UserController extends Controller
     public function guardar_usuarios(Request $request){
 
         $user = new User;
-        $user->id = $request->input('id');
         $user->name = $request->input('name');
         $user->email = $request->input('email');
+        $user->telefono = $request->input('telefono');
         $user->password = bcrypt($request->input('password'));  //Contraseña encriptada
         $user->rol = $request->input('rol');
         $user->save();
