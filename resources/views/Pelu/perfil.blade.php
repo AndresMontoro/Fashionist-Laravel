@@ -94,7 +94,7 @@
 	@if (auth()->user()->rol == "admin")
     <div style="text-align: center;">
         <button >
-            <a class="button" style="vertical-align:middle"  href="{{route('login')}}"><span>MENÚ ADMIN</span></a>
+            <a class="button" style="vertical-align:middle"  href="{{route('admin')}}"><span>MENÚ ADMIN</span></a>
         </button>         
     </div>
 	@endif
@@ -106,7 +106,9 @@
 </article>
 
 @else
-
+<div>
+    <img src="img/sad.png">
+</div>
 <div class="alert alert-danger" style="vertical-align:middle"> 
         <ul>
             <li>TIENE QUE ESTAR LOGGEADO CAPO</li>
