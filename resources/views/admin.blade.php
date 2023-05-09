@@ -12,7 +12,7 @@
   padding: 0;
 }
 
-h1 {
+h1 { 
     background-color: #333;
     color: #fff;
     padding: 1em;
@@ -50,15 +50,43 @@ a + a {
 }
 
     </style>
-</head><h1>Menu administrador</h1>
-<body>
-<div>
-    <a class="boton" href="/consultar">Consultar</a>
-    <a class="boton" href="/anadir">Añadir</a>
-    <a class="boton" href="/eliminar">Eliminar</a>
-    <a class="boton" href="/">Salir</a>
-  </div>
 
-   
+</head><h1>Menu administrador</h1>
+
+<body>
+
+@auth
+
+      @if (auth()->user()->rol == "admin")
+      <div>
+          <a class="boton" href="/consultar">Consultar</a>
+          <a class="boton" href="/anadir">Añadir</a>
+          <a class="boton" href="/eliminar">Eliminar</a>
+          <a class="boton" href="/">Salir</a>
+        </div>
+
+        
+        @else
+        <div>
+          <img class="center" src="img/sad.png" alt="SAD" width="150" height="150">
+      </div>
+      <div class="alert alert-danger" style="vertical-align:middle"> 
+              <ul>
+                  <li>USTED NO ES ADMIN CAPO</li>
+              </ul></div>
+
+      @endif
+
+      @else
+      <div>
+          <img class="center" src="img/sad.png" alt="SAD" width="150" height="150">
+      </div>
+      <div class="alert alert-danger" style="vertical-align:middle"> 
+              <ul>
+                  <li>TIENE QUE ESTAR LOGGEADO CAPO</li>
+              </ul></div>
+
+  @endif
+
 </body>
 </html>
